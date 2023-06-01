@@ -1,0 +1,10 @@
+<mat-card class="item" *ngIf="task"  style="margin: .5rem 0px">
+  <mat-card-content>
+    <div (dblclick)="edit.emit(task)">
+      <h2>{{ task.title }}</h2>
+      <p>
+        {{ task.description }}
+      </p>
+    </div>
+  </mat-card-content>
+</mat-card>
